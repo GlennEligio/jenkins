@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     parameters {
-        gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH', quickFilterEnabled: true, sortMode: "DESCENDING_SMART", useRepository: 'dntx'
+        gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH', quickFilterEnabled: true, sortMode: "DESCENDING_SMART"
     }
     
     stages {
